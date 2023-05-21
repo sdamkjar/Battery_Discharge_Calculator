@@ -6,9 +6,7 @@ Author: Stefan Damkjar
 Date: 19-May-2023
 
 ## Description:
-This project provides functions to estimate the battery discharge characteristics for the given discharge rate and temperature by applying interpolation techniques to the discharge curves in Figure 1. It can calculate the net change in energy stored in the battery given the discharge rate, temperature, initial voltage, and final voltage. The function to calculate the net change in energy stored can handle different battery pack configurations (e.g., "2s2p").
-
-Tool to estimate the battery discharge characteristics for the given discharge rate and temperature by using interpolation techniques to the discharge curves in Figure 1. It can calculate the net change in energy stored in the battery given the discharge rate, temperature, initial voltage, and final voltage. The function to calculate the net change in energy stored can handle different battery pack configurations (e.g., "2s2p").
+This project estimates battery discharge characteristics using interpolation techniques on available discharge curves. It calculates energy change based on discharge rate, temperature, initial and final voltage. Supports various battery pack configurations.
 
 <div style="text-align:center"><img src ="Battery_Discharge_Curves.png" width="600"></div>
 <div style="text-align:center"><font color="grey"><i>Figure. 1: Battery discharge curves from the NanoAvionics Battery Pack Datasheet</i></font></div><p></p>
