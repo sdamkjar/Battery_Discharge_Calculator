@@ -15,8 +15,9 @@
 % WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 % See the License for the specific language governing permissions and
 % limitations under the License.
-%
-%
+
+
+
 % This function accepts a discharge rate and a temperature as inputs and
 % creates a new discharge curve by interpolating between the available
 % curves based on the inputs.
