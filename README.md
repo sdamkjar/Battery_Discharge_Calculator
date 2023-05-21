@@ -78,7 +78,7 @@ The output of the function is the net change in energy stored in the battery, in
 
 Note: The `interpolate_discharge_curve` function is used internally by `calculate_energy_change.m` to obtain the interpolated discharge curve for the given discharge rate and temperature.
 
-### Example usage
+### Example usage:
 ```
 discharge_rate = 1.5;               % Desired discharge rate
 temperature = 10;                   % Desired temperature in degC
