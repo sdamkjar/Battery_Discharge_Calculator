@@ -5,19 +5,32 @@ Author: Stefan Damkjar
 
 Date: 19-May-2023
 
-## Description:
-This project provides functions to estimate the battery discharge characteristics for the given discharge rate and temperature by applying interpolation techniques to the discharge curves in Figure 1. It can calculate the net change in energy stored in the battery given the discharge rate, temperature, initial voltage, and final voltage. The function to calculate the net change in energy stored can handle different battery pack configurations (e.g., "2s2p").
 
-Tool to estimate the battery discharge characteristics for the given discharge rate and temperature by using interpolation techniques to the discharge curves in Figure 1. It can calculate the net change in energy stored in the battery given the discharge rate, temperature, initial voltage, and final voltage. The function to calculate the net change in energy stored can handle different battery pack configurations (e.g., "2s2p").
+Copyright 2023 Stefan Damkjar
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+## Description
+This project estimates battery discharge characteristics using interpolation techniques on available discharge curves. It calculates energy change based on discharge rate, temperature, initial and final voltage. Supports various battery pack configurations.
 
 <div style="text-align:center"><img src ="Battery_Discharge_Curves.png" width="600"></div>
 <div style="text-align:center"><font color="grey"><i>Figure. 1: Battery discharge curves from the NanoAvionics Battery Pack Datasheet</i></font></div><p></p>
 
-## Usage:
+## Usage
 1. Make sure the files are present in your working directory in matlab.
 2. Call the functions from your MATLAB script or command window by providing the required inputs.
 
-## Files:
+## Files
 - `interpolate_discharge_curve.m`: Interpolates the discharge curve based on the discharge rate and temperature.
 - `calculate_energy_change.m`: Calculates the net change in energy stored in a battery based on the discharge rate, temperature, initial voltage, final voltage, and battery pack configuration.
 - `dischargeCurves.mat`: Contains the data for the available discharge curves, extracted from the NanoAvionics Battery Pack datasheet.
@@ -34,7 +47,7 @@ The function uses interpolation techniques to estimate the discharge curve of th
 
 The output of the function is a structure that contains the interpolated discharge curve, including the discharged capacity (in mAh) and the corresponding voltage (in V).
 
-### Example usage:
+### Example Usage:
 ```matlab
 discharge_rate = 1.5;               % Desired discharge rate
 temperature = 10;                   % Desired temperature in degC
@@ -65,7 +78,7 @@ The output of the function is the net change in energy stored in the battery, in
 
 Note: The `interpolate_discharge_curve` function is used internally by `calculate_energy_change.m` to obtain the interpolated discharge curve for the given discharge rate and temperature.
 
-### Example usage:
+### Example Usage:
 ```matlab
 discharge_rate = 1.5;               % Desired discharge rate
 temperature = 10;                   % Desired temperature in degC
